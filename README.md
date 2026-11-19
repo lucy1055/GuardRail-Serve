@@ -94,25 +94,25 @@ GuardRail-Serve/
 └── README.md                       # Project documentation
 ```
 ## How to rum
-## 1 Create & Activate Virtual Environment
+## 1 For making a Virtual Environment
 ```
 python -m venv .venv
 ```
-## 2 Windows (PowerShell)
+## 2 For activate the environment
 ```
 .venv\Scripts\Activate.ps1
 ```
-## 3 Install Dependencies
+## 3 Install all Dependencies
 ```
 pip install -r requirements.txt
 ```
-## 4 Run the FastAPI Gateway
+## Start the test run
+```
+python -m pytest -v
+```
+## 4 Start FastAPI server for test the live API
 ```
 uvicorn src.main:app --reload
-```
-## 5 Run Tests
-```
-pytest
 ```
 ## Project Goal
 

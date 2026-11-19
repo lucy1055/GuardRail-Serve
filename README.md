@@ -4,6 +4,23 @@ GuardRail-Serve is a low-latency AI inference gateway with built in PII (Persona
 
 By combining a **FastAPI** gateway, **PII masking middleware**, a custom **C++17** pre-processing extension, and **ONNX Runtime with INT8 quantization**, GuardRail-Serve protects sensitive user data while delivering **2.8x higher throughput**, **62% lower memory usage**, and **38 ms p95 latency**.
 
+## Project Structure
+
+```text
+GuardRail-Serve/
+├── .github/
+│   └── workflows/
+│       └── ci.yml                  # GitHub Actions CI workflow
+├── src/
+│   ├── main.py                     # FastAPI gateway & UUID tracking
+│   ├── middleware.py               # PII auditing & masking middleware
+│   ├── inference.py                # ONNX Runtime + INT8 inference module
+│   └── cpp_extension/              # C++17 tokenization & pre-processing
+├── tests/
+│   └── test_gateway.py             # API & gateway test cases
+├── requirements.txt                # Python dependencies
+└── README.md                       # Project documentation
+```
 ## How It Works
 
 1. **Request Arrives & Gets a Unique ID (FastAPI):**

@@ -1,0 +1,7 @@
+fastapi>=0.110.0       # REST API gateway and request routing
+uvicorn>=0.29.0        # ASGI server to run FastAPI
+pydantic>=2.6.0        # Request/response schema validation
+onnxruntime>=1.17.0    # Fast inference on INT8 quantized ONNX model
+numpy>=1.26.0          # Tensor and numerical array operations
+pytest>=8.0.0          # Automated unit and integration tests
+httpx>=0.27.0          # Test client for API endpoint testing

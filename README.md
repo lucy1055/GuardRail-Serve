@@ -114,3 +114,8 @@ uvicorn src.main:app --reload
 ```
 pytest
 ```
+## Project Goal
+
+The goal of **GuardRail-Serve** is to provide a fast, privacy-aware AI inference gateway that masks sensitive PII before model execution, 
+accelerates pre-processing with a custom C++17 extension, and delivers low-latency, memory-efficient responses using INT8 quantized ONNX Runtime 
+inference.
